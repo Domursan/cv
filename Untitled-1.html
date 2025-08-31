@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>mon cv</title>
+    <style>
+      :root { color-scheme: dark; }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        min-height: 100svh;
+        display: grid;
+        place-items: center; /* centre vertical + horizontal */
+        background: #1a1a1a; /* gris foncé */
+        color: #eaeaea;
+        font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial, "Noto Sans";
+      }
+      main { width: 100%; padding: 24px; }
+
+      .frame {
+        width: min(92vw, 960px);
+        margin-inline: auto;
+        border-radius: 16px;
+        overflow: hidden;
+        background: #0f0f0f; /* léger contraste */
+        outline: 1px solid rgba(255,255,255,0.08);
+        box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        aspect-ratio: 16 / 9; /* rend le conteneur responsive */
+      }
+      .frame iframe {
+        width: 100%;
+        height: 100%;
+        border: 0;
+        display: block;
+      }
+
+      footer { text-align: center; opacity: .75; font-size: 0.9rem; margin-top: 12px; }
+      code { background: rgba(255,255,255,0.08); padding: 2px 6px; border-radius: 6px; }
+      a { color: #b6cdfd; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="frame" role="region" aria-label="Lecteur YouTube">
+        <!-- Remplacez dQw4w9WgXcQ par l'ID de votre vidéo -->
+        <iframe
+          src="https://www.youtube-nocookie.com/embed/0Dtze-YSrXY"
+          title="YouTube video player"
+          loading="lazy"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </main>
+  </body>
+</html>
